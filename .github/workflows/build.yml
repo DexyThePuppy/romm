@@ -37,8 +37,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            name=rommapp/romm
-            name=ghcr.io/rommapp/romm
+            ghcr.io/${{ github.repository }}
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
